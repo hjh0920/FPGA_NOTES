@@ -169,9 +169,9 @@ end
 
 时钟要跑100M、200M、300M取决于哪些因素
 
-最高时钟频率，即最小时钟周期==**T~min~=T~CO~+T~data~+T~su~**==
+最高时钟频率，即最小时钟周期==**T<sub>min</sub>=T<sub>CO</sub>+T<sub>data</sub>+T<sub>su</sub>**==
 
-所以如果要提高时钟频率，只能更改==组合逻辑延时**T~data~**==
+所以如果要提高时钟频率，只能更改==组合逻辑延时**T<sub>data</sub>**==
 
 <img alt="20211022140315856" src="MD_IMG/FPGA大串讲.assets/image-20211022140315856.png"  />
 
@@ -183,7 +183,7 @@ end
 
 
 
-T~min~=T~CO~+T~data~+T~su~-==T~skew~==
+T<sub>min</sub>=T<sub>CO</sub>+T<sub>data</sub>+T<sub>su</sub>-==T<sub>skew</sub>==
 
 skew为负数，对时序起恶化作用；
 

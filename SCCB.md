@@ -44,10 +44,10 @@ OV公司为了减少传感器引脚的封装，现在SCCB总线大多采用两�
 
 **参数说明**
 
-- t~PRC~：SCCB_E拉低之前，SIO_D必须保持高电平的最短时间，==15ns==
-- t~PRA~：SIO_D拉低之前，SCCB_E必须保持低电平的最短时间，==1.25us==
-- t~PSA~：SCCB_E拉高之前，SIO_D必须保持高电平的最短时间，==15ns==
-- t~PSC~：SIO_D拉低之前，SCCB_E必须保持低电平的最短时间，==0ns==
+- t<sub>PRC</sub>：SCCB_E拉低之前，SIO_D必须保持高电平的最短时间，==15ns==
+- t<sub>PRA</sub>：SIO_D拉低之前，SCCB_E必须保持低电平的最短时间，==1.25us==
+- t<sub>PSA</sub>：SCCB_E拉高之前，SIO_D必须保持高电平的最短时间，==15ns==
+- t<sub>PSC</sub>：SIO_D拉低之前，SCCB_E必须保持低电平的最短时间，==0ns==
 
 <img alt="image-20230422174602727" src="MD_IMG/SCCB.assets/image-20230422174602727.png"  />
 
@@ -92,7 +92,7 @@ OV公司为了减少传感器引脚的封装，现在SCCB总线大多采用两�
 
 - SIO_D_OE_M、SIO_D_OE_S低有效，分别为主设备和从设备的I/O使能信号
 - SIO_D_OE_S 先变为低，即从设备输出SIO_D信号，主设备作为输入端
-- t~CYC~：单bit传输周期，最短10us，对应时钟频率100KHz
+- t<sub>CYC </sub>：单bit传输周期，最短10us，对应时钟频率100KHz
 
 <img alt="image-20230422231023238" src="MD_IMG/SCCB.assets/image-20230422231023238.png"  />
 
