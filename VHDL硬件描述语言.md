@@ -623,7 +623,7 @@ TEXTIO 是VHDL 标准库STD 中的一个程序包（Package）。在该包中定
 
 ##### 信号名连贯缩写
 
-**部分缩写的统一规定为：**
+**部分缩写的统一规定为**：
 
 Addr   address;     Clk   clock;     Clr   clear;     Cnt   counter
 

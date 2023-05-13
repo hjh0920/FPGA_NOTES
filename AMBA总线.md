@@ -175,8 +175,8 @@ PSTRB信号，用于指示写数据中哪些字节有效，PSTRB[n]  对应 PWDA
 
 <img alt="20220611194240094" src="MD_IMG/AMBA总线.assets/image-20220611194240094.png"  />
 
-- **IDLE：**这个是APB的默认状态，也就是没有传输时候的状态；
-- **SETUP：**当需要进行一个传输的时候，APB 首先进入这个状态；PSELx信号首先拉高；总线仅仅在SETUP状态停留一个时钟周期，然后接着在下一个时钟的上升沿进入ACCESS状态；
+- **IDLE**：这个是APB的默认状态，也就是没有传输时候的状态；
+- **SETUP**：当需要进行一个传输的时候，APB 首先进入这个状态；PSELx信号首先拉高；总线仅仅在SETUP状态停留一个时钟周期，然后接着在下一个时钟的上升沿进入ACCESS状态；
 - **ACESS**：
   - 在SETUP状态转换到ACCESS，PENABLE 信号被拉高；在SETUP状态转换到ACCESS状态这段时间里，address，write，select 和 write data 信号必须保持稳定；
   - 处于ACESS状态下，如果PREADY为0，会让其继续处于ACCESS状态；否则，PREADY为1，如果还有传输则再次进入，SETUP-> ACCESS，如果没有传输，直接回到IDLE；

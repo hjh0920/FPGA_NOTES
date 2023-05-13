@@ -1317,7 +1317,7 @@ endmodule
 
 #### 信号名连贯缩写
 
-**部分缩写的统一规定为：**
+**部分缩写的统一规定为**：
 
 Addr   address;     Clk   clock;     Clr   clear;     Cnt   counter
 

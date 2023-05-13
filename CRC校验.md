@@ -22,7 +22,7 @@ CRC的目的是保证数据的完整性，其方法是在发送数据的后面�
 
 <img src="./MD_IMG/CRC校验.assets/image-20220126221439487.png" alt="image-20220126221439487" style="zoom: 50%;" />
 
-**总结CRC计算过程：**
+**总结CRC计算过程**：
 
 1. 如果输入数据反转为True，对输入数据**按字节反转**后作为被除数；否则直接将输入数据作为被除数。
 
@@ -35,7 +35,7 @@ CRC的目的是保证数据的完整性，其方法是在发送数据的后面�
 
 6. 如果结果异或值不为0，那么最后的结果需要同结果异或值做异或运算。
 
-了解了CRC的原理，会发现：**输入初始值，输入数据反转，输出数据反转，结果异或值都只跟输入输出数据相关的，主要是多项式（Poly）的区别。** 
+了解了CRC的原理，会发现**：输入初始值，输入数据反转，输出数据反转，结果异或值都只跟输入输出数据相关的，主要是多项式（Poly）的区别。** 
 
 参考资料：
 
@@ -106,9 +106,9 @@ fp2.close()
 
 ## 五、CRC参考模型
 
-**官方网址：**[crcmod.predefined – CRC calculation using predefined algorithms — crcmod v1.7](http://crcmod.sourceforge.net/crcmod.predefined.html)
+**官方网址**：[crcmod.predefined – CRC calculation using predefined algorithms — crcmod v1.7](http://crcmod.sourceforge.net/crcmod.predefined.html)
 
-<img alt="20220126225241459](./MD_IMG/CRC校验.assets/image-20220126225241459.png"  />
+<img src="./MD_IMG/CRC校验.assets/image-20220126225241459.png" alt="image-20220126225241459" style="zoom: 50%;" />
 
 ---------
 
