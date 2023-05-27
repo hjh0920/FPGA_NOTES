@@ -99,5 +99,11 @@ link_design -part xc7a100tfgg676-2
 
 <img src="MD_IMG/Vivado软件.assets/image-20211223092705263-16800652291162.png" alt="image-20211223092705263" style="zoom:60%;" />
 
+## 联合VScode
+
+```
+C:/Softwares/VS Code/Code.exe -g [file name]:[line number]
+```
+
 
 

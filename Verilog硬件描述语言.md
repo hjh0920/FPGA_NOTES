@@ -95,6 +95,7 @@
 
 - wire 表示信号，常用来表示assign关键字指定的组合逻辑信号
 - wire 型信号可以用作输入，输出
+- testbench例化接口若是inout，接口信号声明为wire类型
 
 #### reg型
 
