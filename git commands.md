@@ -1,6 +1,31 @@
 # git commands
 
+## 本地更新上传master分支
 
+```bash
+cd FPGA_NOTES/
+git add .
+git commit -m "add xx.file"
+## 切换到主分支，看跟本地是否有差异
+git switch master
+git pull
+## pull 之后会显示状态，如果没有更改，切换回本地分支 push
+git switch dev-home-Y7000
+git push
+## 如果没有关联需要先关联
+## 上 github 将 当前分支内容同步到 master 分支
+
+## 使用另外一台电脑
+## 切换到 master 分支
+git switch master
+git pull
+## 切换本地分支
+git switch dev-home-destop
+## 同步 master 文件到 本地
+git merge master
+
+## 然后就可以在这台电脑编辑了
+```
 
 
 
