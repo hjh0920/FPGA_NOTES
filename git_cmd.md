@@ -3,15 +3,27 @@
 ## 本地更新上传master分支
 
 ```bash
+## 本地更新时，注意切换到dev分支
+git switch dev-home-Y7000
+
 cd FPGA_NOTES/
 git add .
 git commit -m "add xx.file"
 ## 切换到主分支，看跟本地是否有差异
 git switch master
 git pull
+
 ## pull 之后会显示状态，如果没有更改，切换回本地分支 push
 git switch dev-home-Y7000
 git push
+
+## pull 之后会显示状态，如果有更改，切换回本地分支后merge master，再 push
+git switch dev-home-Y7000
+git merge master
+git push
+
+
+
 ## 如果没有关联需要先关联
 ## 上 github 将 当前分支内容同步到 master 分支
 
