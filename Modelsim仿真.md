@@ -1,5 +1,3 @@
-# Modelsim仿真
-
 - author：hongjh
 - time：2021
 - version:
@@ -64,13 +62,36 @@ vsim -L work   -L cyclone10gx_ver -L altera_ver -L lpm_ver -L sgate_ver -L alter
 
 这里使用的版本是：
 
-- Vivado 2018.3
-- Modelsim SE-64 10.6d
+- Vivado 2019.1
+- Modelsim SE-64 2020.4
 
-# ISE 联合 Modelsim
+## Modelsim 安装
 
-这里使用的版本是：
+1. 复制MentorKG.exe，mgls64.dll以及patch64_dll.bat这三个文件到Modelsim安装目录的win64文件夹下，如E:\modeltech64_2020.4\win64
+2. 双击win64文件夹内粘贴过去的patch64_dll.bat文件，会生成LICENSE.TXT，另存到安装目录
+3. 设置系统环境变量，变量值为LICENSE.TXT的路径   变量名：LM_LICENSE_FILE   变量值：E:\modeltech64_2020.4\LICENSE.TXT
+4. 完成
 
-- ISE 14.7
-- Modelsim SE-64 10.4
+## 联合 Vivado
 
+1. 生成库文件
+
+   ![image-20230624200514627](MD_IMG/Modelsim仿真.assets/image-20230624200514627.png)
+
+2. 从库文件夹里的 modelsim.ini 文件中复制如下内容
+
+   ![image-20230624201226528](MD_IMG/Modelsim仿真.assets/image-20230624201226528.png)
+
+3. 将 modelsim 根目录下 modelsim.ini 文件属性只读关闭
+
+4. 粘贴刚刚复制的内容到该文件的如下位置，然后保存，勾选只读
+
+   ![image-20230624201314875](MD_IMG/Modelsim仿真.assets/image-20230624201314875.png)
+
+5. Vivado 设置
+
+   ![image-20230624201449182](MD_IMG/Modelsim仿真.assets/image-20230624201449182-1687608911932-1.png)
+
+   ![image-20230624201515411](MD_IMG/Modelsim仿真.assets/image-20230624201515411.png)
+
+6. 可以仿真了

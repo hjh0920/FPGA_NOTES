@@ -8,6 +8,14 @@
 
 [toc]
 
+## 如何修改工程名称
+
+主要将 xxx.xpr文件和工程子文件夹名称修改
+
+![image-20230624225427709](MD_IMG/Vivado软件.assets/image-20230624225427709.png)
+
+<img src="MD_IMG/Vivado软件.assets/image-20230624225516561.png" alt="image-20230624225516561" style="zoom: 80%;" />
+
 ## 如何保存/恢复时序报告（.rpx)
 
 
@@ -106,4 +114,8 @@ C:/Softwares/VS Code/Code.exe -g [file name]:[line number]
 ```
 
 
+
+## 联合 Modelsim
+
+见文件链接 [Modelsim仿真](./Modelsim仿真.md)
 
